@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="hi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>भजन संग्रह</title>
+    <link rel="stylesheet" href="./home.css">
+    <!-- Google Fonts for Stylish Devotional Look -->
+    <link href="https://fonts.googleapis.com/css2?family=Akaya+Telivigala&family=Baloo+2&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <audio id="omAudio" autoplay loop muted>
+    <source src="music/ancient-dancing-echoes-om-chanting-394453.mp3" type="audio/mp3">
+  </audio>
+
+  <script>
+    window.addEventListener('load', () => {
+      const audio = document.getElementById('omAudio');
+      audio.volume = 0; // start muted
+      audio.play().then(() => {
+        // Gradually fade in volume
+        let vol = 0;
+        const fadeIn = setInterval(() => {
+          if (vol < 1) {
+            vol += 0.02;
+            audio.volume = vol;
+          } else {
+            clearInterval(fadeIn);
+          }
+        }, 200);
+      }).catch(err => {
+        console.log("Autoplay blocked:", err);
+      });
+    });
+  </script>
+    <!-- Header Section with Logo -->
+    <header class="firstDivision">
+        <div class="logo-title">
+            <img src="images/logo.png" alt="Bhajan Logo" class="logo">
+            <div>
+                <h1 class="bhakti">भजन संग्रह</h1>
+            </div>
+        </div>
+    </header>
+
+    <!-- Devotional Image Gallery (Continuous Slider) -->
+    <section class="secondDivision slider">
+        <div class="slide-track">
+            <img src="images/WhatsApp Image 2025-10-03 at 20.47.13 (1).jpeg" alt="भगवान श्रीराम" class="gallery-img">
+            <img src="images/WhatsApp Image 2025-10-03 at 20.47.13 (2).jpeg" alt="जय माता दी" class="gallery-img">
+            <img src="images/WhatsApp Image 2025-10-03 at 20.47.13 (3).jpeg" alt="श्री कृष्ण" class="gallery-img">
+            <img src="images/WhatsApp Image 2025-10-03 at 20.47.13.jpeg" alt="श्री कृष्ण" class="gallery-img">
+            <img src="images/WhatsApp Image 2025-10-03 at 20.47.14 (1).jpeg" alt="श्री कृष्ण" class="gallery-img">
+            <img src="images/WhatsApp Image 2025-10-03 at 20.47.14.jpeg" alt="श्री कृष्ण" class="gallery-img">
+            <img src="images/WhatsApp Image 2025-10-03 at 20.47.15.jpeg" alt="श्री राधा रानी" class="gallery-img">
+
+            <!-- Duplicate images for seamless infinite scroll -->
+            <img src="images/WhatsApp Image 2025-10-03 at 20.47.13 (1).jpeg" alt="भगवान श्रीराम" class="gallery-img">
+            <img src="images/WhatsApp Image 2025-10-03 at 20.47.13 (2).jpeg" alt="जय माता दी" class="gallery-img">
+            <img src="images/WhatsApp Image 2025-10-03 at 20.47.13 (3).jpeg" alt="श्री कृष्ण" class="gallery-img">
+            <img src="images/WhatsApp Image 2025-10-03 at 20.47.13.jpeg" alt="श्री कृष्ण" class="gallery-img">
+            <img src="images/WhatsApp Image 2025-10-03 at 20.47.14 (1).jpeg" alt="श्री कृष्ण" class="gallery-img">
+            <img src="images/WhatsApp Image 2025-10-03 at 20.47.14.jpeg" alt="श्री कृष्ण" class="gallery-img">
+            <img src="images/WhatsApp Image 2025-10-03 at 20.47.15.jpeg" alt="श्री राधा रानी" class="gallery-img">
+        </div>
+    </section>
+
+    <!-- Bhajan Categories -->
+    <section class="thirdDivision">
+        <a href="shri-ganesh.html" class="bhajan-category">श्री गणेश भजन</a>
+        <a href="ma-durga-bhajan.html" class="bhajan-category">माँ दुर्गा भजन</a>
+        <a href="shri-radha-bhajan.html" class="bhajan-category">श्री राधा भजन</a>
+        <a href="shri-ram-bhajan.html" class="bhajan-category">श्री राम भजन</a>
+        <a href="shri-krishna-bhajan.html" class="bhajan-category">श्रीकृष्ण भजन</a>
+        <a href="shiv-bhajan.html" class="bhajan-category">शिव भजन</a>
+        <a href="vividh.html" class="bhajan-category">विविध भजन</a>
+    </section>
+
+    <!-- Singers Section with YouTube Buttons -->
+    <section class="singersDivision">
+        <a href="https://www.youtube.com/results?search_query=Anup+Jalota+bhajan" target="_blank" class="singer-button">अनूप जलोटा</a>
+        <a href="https://www.youtube.com/results?search_query=Prakash+Gandhi+bhajan" target="_blank" class="singer-button">प्रकाश गांधी</a>
+        <a href="https://www.youtube.com/results?search_query=Neha+Saraswat+bhajan" target="_blank" class="singer-button">देवी नेहा सरस्वत</a>
+        <a href="https://www.youtube.com/results?search_query=Jaya+Kishori+bhajan" target="_blank" class="singer-button">जया किशोरी जी</a>
+        <a href="https://www.youtube.com/results?search_query=Chitralekha+Devi+bhajan" target="_blank" class="singer-button">देवी चित्रलेखा जी</a>
+        <a href="https://www.youtube.com/results?search_query=Dhruv+Swarna+Shri+bhajan" target="_blank" class="singer-button">ध्रुव एवं स्वर्णा श्री</a>
+        <a href="https://www.youtube.com/results?search_query=Swasti+Mehul+bhajan" target="_blank" class="singer-button">स्वस्ति मेहुल</a>
+        <a href="https://www.youtube.com/results?search_query=Swati+Mishra+bhajan" target="_blank" class="singer-button">स्वाति मिश्रा</a>
+        <a href="https://www.youtube.com/results?search_query=Lakhbir+Singh+Lakkha+bhajan" target="_blank" class="singer-button">लखबीर सिंह लक्खा</a>
+        <a href="https://www.youtube.com/results?search_query=Jubin+Nautiyal+bhajan" target="_blank" class="singer-button">जुबिन नौटियाल</a>
+        <a href="https://www.youtube.com/results?search_query=Manoj+Tiwari+bhajan" target="_blank" class="singer-button">मनोज तिवारी</a>
+        <a href="https://www.youtube.com/results?search_query=Sonu+Nigam+bhajan" target="_blank" class="singer-button">सोनू निगम</a>
+        <a href="https://www.youtube.com/results?search_query=Hansraj+Raghuvanshi+bhajan" target="_blank" class="singer-button">हंसराज रघुवंशी</a>
+        <a href="https://www.youtube.com/results?search_query=Rajan+Ji+bhajan" target="_blank" class="singer-button">राजन जी</a>
+        <a href="https://www.youtube.com/results?search_query=Pradeep+Mishra+bhajan" target="_blank" class="singer-button">प्रदीप मिश्रा जी</a>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-buttons">
+            <a href="about-us.html" class="footer-btn">About हमारे बारे में</a>
+            <a href="contact.html" class="footer-btn">संपर्क करें</a>
+            <a href="https://www.youtube.com/@BHAKTIMAUSAM" target="_blank" class="footer-btn">YouTube चैनल</a>
+            <a href="#" class="footer-btn">Facebook</a>
+            <a href="#" class="footer-btn">Instagram</a>
+        </div>
+        <p>🙏 © 2025 भजन संग्रह | Designed with Love & Devotion 🙏</p>
+    </footer>
+
+</body>
+</html>

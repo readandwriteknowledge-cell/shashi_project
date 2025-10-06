@@ -1,0 +1,153 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Setup */
+body {
+    font-family: 'Baloo 2', cursive;
+    color: #4a235a;
+    text-align: center;
+    position: relative;
+    overflow-x: hidden;
+}
+
+/* Background Ganesh Image (Blurred) */
+.background-blur {
+    background-image: url('images/shri_ganesh.png'); /* replace with your actual image name */
+    background-size: cover;
+    background-position: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    filter: blur(10px);
+    z-index: -1;
+    opacity: 0.7;
+}
+
+/* Header */
+.firstDivision {
+    padding: 20px 0;
+    background: rgba(255, 245, 230, 0.9);
+    border-bottom: 4px solid #8e44ad;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+
+.logo-title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+}
+
+.logo {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    border: 3px solid #8e44ad;
+    box-shadow: 0px 4px 10px rgba(0,0,0,0.4);
+}
+
+.bhakti {
+    color: #8e44ad;
+    font-family: 'Akaya Telivigala', cursive;
+    font-size: 50px;
+    text-shadow: 2px 2px 8px #ffcf00;
+}
+.sub-title {
+    color: #e67e22;
+    font-family: 'Baloo 2', cursive;
+    font-size: 35px;
+    text-shadow: 1px 1px 6px #8e44ad;
+}
+
+/* Bhajan List Right Side */
+.bhajan-list {
+    text-align: left;
+    margin-right: 10%;
+}
+
+/* Bhajan Section */
+.bhajan-section {
+    margin: 40px auto;
+    background: rgba(255, 255, 255, 0.85);
+    width: 80%;
+    border-radius: 25px;
+    padding: 30px;
+    box-shadow: 0px 8px 25px rgba(0,0,0,0.3);
+}
+
+.section-title {
+    color: #6c3483;
+    font-size: 32px;
+    margin-bottom: 25px;
+    text-shadow: 1px 1px 5px #f39c12;
+}
+
+/* Bhajan List */
+.singer-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+
+.bhajan-item {
+    font-size: 22px;
+    font-weight: bold;
+}
+
+/* Singer Buttons */
+.singer-button {
+    display: inline-block;
+    margin-top: 5px;
+    padding: 12px 25px;
+    background: linear-gradient(to right, #8e44ad, #d35400);
+    color: #fff;
+    border-radius: 12px;
+    text-decoration: none;
+    font-size: 18px;
+    transition: all 0.3s ease;
+    box-shadow: 0px 4px 10px rgba(0,0,0,0.3);
+}
+
+.singer-button:hover {
+    background: linear-gradient(to right, #d35400, #8e44ad);
+    transform: scale(1.08);
+}
+
+/* Footer */
+footer {
+    background-color: rgba(81, 46, 95, 0.95);
+    color: #fff;
+    padding: 20px;
+    margin-top: 50px;
+    box-shadow: 0 -5px 15px rgba(0,0,0,0.2);
+}
+
+.footer-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+    margin-bottom: 15px;
+}
+
+.footer-btn {
+    padding: 10px 20px;
+    background-color: #f39c12;
+    color: #fff;
+    border-radius: 10px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: transform 0.3s, background 0.3s;
+}
+
+.footer-btn:hover {
+    background-color: #e67e22;
+    transform: scale(1.05);
+}
